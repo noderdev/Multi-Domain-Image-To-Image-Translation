@@ -31,6 +31,7 @@ The StarGAN network comprises of 3 types of losses which it tries to minimize to
 Results on Weather Image Translation
 =
 We then performed image-to-image translation on the weather images dataset. The following are some of the translations: -
+
 <img width="704" alt="Screen Shot 2024-03-16 at 2 51 44 PM" src="https://github.com/noderdev/Multi-Domain-Image-To-Image-Translation/assets/29915581/259a3e4c-cc20-4688-b668-98ea5fa33186">
 
 Requirements
