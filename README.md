@@ -28,6 +28,13 @@ The StarGAN network comprises of 3 types of losses which it tries to minimize to
 
       <img width="287" alt="Screen Shot 2024-03-16 at 2 46 21 PM" src="https://github.com/noderdev/Multi-Domain-Image-To-Image-Translation/assets/29915581/0ea61b25-ede7-4044-97e5-16256c163cac">
 
+Dataset
+==
+The dataset comprises of 4 classes ie, Cloudy, Rainy , Foggy and Sunrise. To get the dataset, download from following link :-
+```
+https://drive.google.com/file/d/1D2w_GD6WUM5EHTFmjugvxFpHTC_H3Chb/view?usp=sharing
+```
+
 Results on Weather Image Translation
 =
 We then performed image-to-image translation on the weather images dataset. The following are some of the translations: -
@@ -44,7 +51,9 @@ Train
 
 ```sh
 python main.py --mode train --dataset RaFD --image_size 128 --c_dim 4 --rafd_image_dir <path to train folder>
+
 --sample_dir stargan_custom/samples --log_dir stargan_custom/logs --model_save_dir stargan_custom/models
+
 --result_dir stargan_custom/results --num_iters 200000
  ```
 
@@ -52,7 +61,9 @@ To Generate
 ==
 ```sh
 python main.py --mode test --dataset RaFD --image_size 128 --c_dim 4 --rafd_image_dir <path to test folder>
+
 --sample_dir stargan_custom/samples --log_dir stargan_custom/logs - -model_save_dir stargan_custom/models
+
 --result_dir stargan_custom/results --test_iters 200000
 ```
 
